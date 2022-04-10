@@ -1,0 +1,14 @@
+{
+  "train_data_dir": "korquad_train_128",
+  "validation_data_dir": "korquad_eval_128",
+  "save_dirpath": "model/",
+  "load_pthpath": "keybld",
+  "gpu_ids": [0],
+  "batch_size": 1,
+  "virtual_batch_size": 16,
+  "cpu_workers": 2,
+  "num_epochs": 16,
+  "learning_rate": 5e-3,
+  "random_seed": 42,
+  "seq_length": 128
+}
