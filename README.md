@@ -21,6 +21,8 @@ KeyBLD는 BERT와 간단한 알고리즘 만으로도 효율적인 document-rank
 본 repository에서는 이러한 원리의 KeyBLD를 직접 구현해보고, 한국어 데이터 셋을 가지고 fine-tuning하였다. 
 학습에는 [KorQuAD 1.0](https://korquad.github.io/KorQuad%201.0/) 을 사용하였다. 
 
+`klue/bert-base`모델을 사용하여 학습을 진행하였다.
+
 ## 데이터 셋(Dataset)
 
 KorQuAD 1.0 데이터셋을 사용하였으며,데이터 셋을 처리할 때 아래와 같은 방법을 사용하였다.
