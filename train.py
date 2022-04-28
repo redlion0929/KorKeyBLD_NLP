@@ -117,6 +117,7 @@ class train_keyBLD(object):
 
             loss = self.loss_fn(output.unsqueeze(0), label, n)
             loss.backward()
+            cnt+=1
             if (cnt == self.args.virtual_batch_size) or (i ==(len(self.train_dataloader) -1)):
                 torch.nn.utils.clip_grad_norm_(self.model.parameters(), 0.5)
                 self.optimizer.step()
